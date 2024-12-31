@@ -1,25 +1,16 @@
 {
-
-    "builds": [{
-
-        "src": "IMCsystem/wsgi.py",
-
-        "use": "@vercel/python",
-
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
-
-    }],
-
-    "routes": [
-
+    "version": 2,
+    "builds": [
         {
-
-            "src": "/(.*)",
-
-            "dest": "IMCsystem/wsgi.py"
-
+            "src": "IMCsystem/wsgi.py",
+            "use": "@vercel/python",
+            "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
         }
-
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "IMCsystem/wsgi.py"
+        }
     ]
-
 }
