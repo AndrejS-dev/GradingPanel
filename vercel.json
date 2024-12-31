@@ -16,7 +16,7 @@
 
             "src": "/(.*)",
 
-            "dest": "djangoprojectname/wsgi.py"
+            "dest": "IMCsystem/wsgi.py"
 
         }
 
